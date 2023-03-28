@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+
+/* Header Section */
+header {
+    background-image: url('https://www.hdfstutorial.com/wp-content/uploads/2020/12/image-12.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+}
+
+/* Hero section */
+.heroTitle {
+    color: white;
+    font-size: 100px;
+    padding-top: 5%;
+    padding-left: 2%;
+    background: linear-gradient(to right, crimson, pink, springgreen);
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color .2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.heroSubHeading {
+    color: white;
+    font-size: 70px;
+    padding: 5%;
+    background: linear-gradient(to right, rgb(169, 119, 209), rgb(233, 124, 0), rgb(240, 129, 3));
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: color .2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.heroTitle:hover, .heroSubHeading:hover {
+    color: rgba(0, 0, 0, 0);
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: left
+    }
+
+    50% {
+        background-position: right
+    }
+
+    100% {
+        background-position: left
+    }
+}
+
+/* .heroTitle:hover, .heroSubHeading:hover{
+    color: rgb(128, 47, 0);
+} */
+
+
+.navLinks {
+    padding: 10px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(97, 43, 168, 0.37);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: rgb(128, 47, 0);
+}
+
+.icon {
+    color: grey;
+}
+
